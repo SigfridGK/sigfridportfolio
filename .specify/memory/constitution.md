@@ -1,6 +1,6 @@
 <!-- 
 Sync Impact Report:
-- Version: 1.3.0 → 1.3.1 (PATCH: Updated scope, competencies, and standards to reflect real work experience)
+- Version: 1.3.1 → 1.4.0 (MINOR: Added detailed "Featured Projects" section with app specifications)
 - Ratified: 2026-04-11
 - Last Amended: 2026-04-11
 - Developer: Sigfrid Acabal, iOS Developer (since September 2019)
@@ -10,6 +10,15 @@ Sync Impact Report:
 - Technical Focus: iOS development with emphasis on clean architecture, Firebase integration, WebRTC, and cloud services
 - Contact: sigfridacabal3@gmail.com | +63 963 269 7279 (Viber/WhatsApp) | https://www.linkedin.com/in/sigfrid-acabal-b19b8a1b9/
 - Files Updated: constitution.md
+
+Project Changes:
++ ADDED: Featured Projects section with comprehensive project descriptions
+  - Native Camp (En) App: ESL platform with WebRTC, AI features, MVVM architecture
+  - GoodKredit App: Fintech utility with payment integration, multi-service aggregation
+  - PaydayToday App: Earned Wage Access platform with real-time fund transfers
+  - GiftBeam App: Community gift and local business promotion platform
+
+Version Bump Rationale: MINOR - Expanded portfolio guidance with specific, detailed technical specifications for each featured app, including technical stack, features, and market context. This enhances the constitution's utility as a reference for portfolio showcase standards.
 -->
 
 # Sigfrid Portfolio Constitution
@@ -185,6 +194,107 @@ use the contact methods above. Response time commitment: business hours (Philipp
 - Implemented MVC architecture
 - Developed using Swift and Xcode
 
+## Featured Projects
+
+### Native Camp (En) App
+**Forty Degrees Celsius Inc. | 2023 - Present**
+**Purpose**: ESL online tutoring platform designed for busy business professionals and students
+**Description**: 
+Native Camp is one of the best ESL online tutoring schools in Japan. The platform was created for practitioners seeking to improve their English language skills through live online lessons with English speakers. Lessons are conducted via a unique language platform developed in-house, eliminating the need for third-party communication tools like Skype. This positions Native Camp as a rare, integrated solution in the global ESL education market.
+
+**Technical Stack**:
+- **Language**: Swift
+- **Architecture**: MVVM
+- **Key Features**: Live chat, video P2P/streaming via SkyWay WebRTC framework, AI chat and voice features
+- **Distribution**: App Store (published)
+- **Deployment Status**: Production, actively maintained
+
+**Technical Highlights**:
+- WebRTC integration for real-time peer-to-peer communication
+- Advanced video streaming and live chat capabilities
+- MVVM architecture enabling scalability and team collaboration
+- AI and voice feature implementation
+- Multi-language platform support (English, Japan language variants)
+
+---
+
+### GoodKredit App
+**GoodApps Inc. | 2019 - October 2023**
+**Purpose**: Comprehensive electronic Gift Certificate and Gift Voucher management platform with integrated payment ecosystem
+**Description**: 
+GoodKredit is a digital financial utility app built on multiple repayment models, including online payments and bill management. The platform consolidates multiple financial services into a single touchpoint, featuring bill payments, mobile load purchase, organizational payments (Mobile COOP), QR-based payments, drop-off services, integrated online store connectivity, RFID card payments for smart transportation, and play-to-save lottery functionality.
+
+**Technical Stack**:
+- **Language**: Swift
+- **IDE**: Xcode
+- **Architecture**: MVC (Model-View-Controller)
+- **Payment Integration**: eGHL SDK (Malaysia-based payment processor), supporting CC/Visa card transactions
+- **External Libraries**: CocoaPods frameworks for enhanced functionality
+- **Distribution**: App Store (published)
+- **Deployment Status**: Production
+
+**Technical Highlights**:
+- QR code payment integration for cashless transactions
+- Integration with third-party payment processors (eGHL SDK)
+- Multi-service aggregation architecture
+- RFID payment capability for modern transportation cards
+- Connected e-commerce portal integration
+- Financial transaction security and compliance implementation
+
+**Mini Services Included**:
+- Bills payment
+- Mobile load purchase
+- Mobile COOP organizational payments
+- QR-based payments
+- Drop-off service coordination
+- Online store integration
+- RFID card payment capabilities
+- Play-to-Save Lotto functionality
+
+---
+
+### PaydayToday App
+**GoodApps Inc. | 2020 - October 2023**
+**Purpose**: Earned Wage Access (EWA) platform enabling employees to withdraw accrued daily wages before end-of-pay cycle
+**Description**: 
+PaydayToday implements an earned wage access model within the broader GoodKredit ecosystem. EWA democratizes payroll processes, allowing employees flexibility to withdraw from their accrued daily wages at any time, rather than waiting for the traditional monthly or bi-weekly pay cycle. This standalone application provides direct, convenient access to this capability, with 24/7 withdrawal capability through partner finance bank integration.
+
+**Technical Stack**:
+- **Language**: Swift
+- **IDE**: Xcode
+- **Architecture**: MVC (Model-View-Controller)
+- **Payment Integration**: eGHL SDK for financial transactions
+- **External Libraries**: CocoaPods frameworks
+- **Distribution**: App Store (published as standalone application)
+- **Deployment Status**: Production
+
+**Technical Highlights**:
+- Accrued wage calculation and tracking
+- Real-time fund transfer capability to multiple E-wallets (GCash, Maya) and bank accounts
+- 24/7 withdrawal availability via connected partner finance bank
+- Financial transaction processing and security
+- User-friendly interface for wage access management
+- Seamless integration with existing banking and e-wallet ecosystems
+
+**Key Differentiator**: While technically part of the GoodKredit ecosystem, PaydayToday was developed as a standalone application to provide employees direct, convenient access to earned wage access features without navigating the full GoodKredit platform.
+
+---
+
+### GiftBeam App
+**Status**: US-based platform; mobile application in development/deployed form
+**Purpose**: Community-focused gift and voucher distribution platform for new residents and local business promotion
+**Description**: 
+GiftBeam originated in 2001 as "Your Gift Certificate" and has evolved into a modern mobile application. The platform serves two primary functions: distributing freebies and welcome gifts to newly transferred or newly homed residents, and enabling targeted local business advertising to these potential customers in their residential areas.
+
+**Technical Stack**:
+- **Platform**: iOS (mobile application)
+- **Current Distribution**: Voucher/Gift Card digital format
+- **Market**: US-based
+
+**Business Model**: Community engagement through welcome gifts and targeted local advertising, connecting new residents with nearby services and businesses.
+
+**Market Position**: Bridges the gap between resident communities and local business discovery through value-added welcome experiences.
+
 ## Governance
 
 This constitution defines the non-negotiable standards for portfolio development.
@@ -213,4 +323,4 @@ Amendment Procedure:
 - All updates must maintain or elevate current quality standards
 - Backward-incompatible changes require MAJOR version bump with migration plan
 
-**Version**: 1.3.1 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
+**Version**: 1.4.0 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
