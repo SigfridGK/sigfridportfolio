@@ -1,6 +1,6 @@
 <!-- 
 Sync Impact Report:
-- Version: 1.2.0 → 1.2.1 (PATCH: Added LinkedIn profile to Contact Information)
+- Version: 1.2.1 → 1.3.0 (MINOR: Added Principle VII - Professional Presentation & Visual Branding)
 - Ratified: 2026-04-11
 - Last Amended: 2026-04-11
 - Developer: Sigfrid Acabal, iOS Developer (since September 2019)
@@ -9,6 +9,8 @@ Sync Impact Report:
 - Core Competencies: Swift/SwiftUI, Flutter, Node.js, iOS architecture patterns, REST API integration, Spec-Driven Development (SDD)
 - Technical Focus: iOS development with emphasis on clean architecture, Firebase integration, WebRTC, and cloud services
 - Contact: sigfridacabal3@gmail.com | +63 963 269 7279 (Viber/WhatsApp) | https://www.linkedin.com/in/sigfrid-acabal-b19b8a1b9/
+- New Principle: Professional Presentation & Visual Branding (hero section, profile picture, modern aesthetic)
+- Files Updated: constitution.md
 -->
 
 # Sigfrid Portfolio Constitution
@@ -66,11 +68,26 @@ establish technical excellence across teams.
 Rationale: Leadership role requires portfolio to showcase not just individual contribution
 but ability to elevate team standards and technical culture.
 
+### VII. Professional Presentation & Visual Branding
+Portfolio front-end MUST feature a professional, modern aesthetic with clear visual hierarchy.
+**Hero Section**: Eye-catching introduction with professional workspace context, clear value 
+proposition, and clear call-to-action. Professional headshot integrated as circular profile 
+picture with modern styling.
+**Visual Consistency**: Modern color scheme (light theme with accent colors), consistent 
+typography, professional spacing, and alignment. CSS variables enable maintainability.
+**Brand Elements**: Professional photography (workspace, profile headshot), cohesive design 
+language, modern gradients and shadows for depth. Modern hero background establishes 
+professional context (e.g., developer workspace).
+Rationale: First impressions matter. As a Tech Lead, visual presentation demonstrates 
+attention to design and user experience—critical skills for modern development roles.
+Professional visual branding shows respect for recruiter time and positions the portfolio 
+as a finished product, not a work-in-progress.
+
 ## Technology Stack
 
 **Web Portal (Portfolio Site):**
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Design**: Responsive, modern gradient-based aesthetic
+- **Design**: Responsive, modern gradient-based aesthetic with professional branding
 - **Hosting**: Static site compatible with any web server
 - **Version Control**: Git with GitHub integration
 - **Testing & QA**: Accessibility validation (axe DevTools, WAVE), Performance testing (Lighthouse, WebPageTest)
@@ -95,7 +112,8 @@ Before implementing any changes:
 6. Commit with clear, conventional commit messages following Spec-Driven Development (SDD) principles
 7. Self-review code against code review checklist (see Governance)
 8. Verify iOS project descriptions are technically accurate, specific, and demonstrate expertise
-9. Merge to main and deploy
+9. Ensure visual presentation maintains professional branding and modern aesthetic standards
+10. Merge to main and deploy
 
 ## Contact Information
 
@@ -122,6 +140,12 @@ use the contact methods above. Response time commitment: business hours (Philipp
 - Ability to architect solutions for junior developers to understand and extend
 - Best practices exemplified, not just listed
 
+**Visual Presentation**: Portfolio must maintain professional visual standards:
+- Professional headshot integrated prominently in hero section
+- Modern, cohesive color scheme and typography
+- Clear visual hierarchy guiding user attention to key information
+- Responsive design that looks polished on all devices
+
 ## Governance
 
 This constitution defines the non-negotiable standards for portfolio development.
@@ -138,13 +162,16 @@ Code review checklist (self-review for solo project):
 - ✓ Git commit messages follow conventional commit format and SDD principles
 - ✓ Code demonstrates production-ready quality suitable for Tech Lead portfolio
 - ✓ Testing strategies are evident (unit/integration tests referenced or visible in repos)
-- ✓ Firebase, n2.0orking, and WebRTC integrations (where used) are properly documented
+- ✓ Firebase, networking, and WebRTC integrations (where used) are properly documented
 - ✓ Project descriptions include specific technologies (versions, frameworks, libraries)
 - ✓ Code reflects Spec-Driven Development methodology and TDD principles
+- ✓ Professional headshot prominently featured in hero section
+- ✓ Visual branding is consistent, modern, and reflects professional standards
+- ✓ Hero section establishes professional context and value proposition clearly
 
 Amendment Procedure:
 - Constitution changes require version bump with rationale documentation
 - All updates must maintain or elevate current quality standards
 - Backward-incompatible changes require MAJOR version bump with migration plan
 
-**Version**: 1.2.1 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
+**Version**: 1.3.0 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
