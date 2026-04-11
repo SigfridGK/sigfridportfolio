@@ -1,8 +1,9 @@
 # Tasks: Slick Portfolio Light Theme Design
 
 **Input**: Design documents from `/specs/002-portfolio-light-theme/`  
-**Prerequisites**: plan.md (tech stack HTML/CSS/JS), spec.md (4 user stories), constitution v1.1.1  
-**Link to Plan**: [plan.md](plan.md) | **Link to Spec**: [spec.md](spec.md)
+**Prerequisites**: plan.md (tech stack HTML/CSS/JS), spec.md (4 user stories), constitution v1.2.1  
+**Total Tasks**: 67 (Phases 1-8: Setup + Foundational + 4 User Stories + Polish + iOS Content & Leadership)  
+**Link to Plan**: [plan.md](plan.md) | **Link to Spec**: [spec.md](spec.md) | **Link to Alignment Report**: [ALIGNMENT_REPORT.md](ALIGNMENT_REPORT.md)
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing.
 
@@ -199,6 +200,38 @@
 - **Phase 5**: T026-T030 (all style interactive elements, independent)
 - **Phase 6**: T035-T037, T039-T041 (parallel device testing)
 - **Phase 7**: T045-T048, T051 (all independent code review/testing)
+- **Phase 8**: T054-T056 (parallel project card updates), T061-T064 (parallel leadership content)
+
+---
+
+## Phase 8: iOS Content & Technical Leadership (Constitutional Alignment)
+
+**Purpose**: Fulfill Principles V (iOS Development Showcase) and VI (Technical Leadership & Code Quality) from constitution v1.2.1
+
+**Prerequisites**: Phases 1-7 complete
+
+### iOS Development Showcase (Principle V)
+
+**Goal**: Populate project showcase with iOS technical depth, architecture patterns, and case studies demonstrating 7+ years of expertise
+
+### Implementation for iOS Content
+
+- [ ] T054 [P] Update Project 1 card with iOS-specific technologies (Swift, SwiftUI, Alamofire, Firebase) in `index.html`
+- [ ] T055 [P] Update Project 2 card with iOS tech stack and architecture pattern (MVVM/MVP) in `index.html`
+- [ ] T056 [P] Update Project 3 card with iOS tech stack and architecture pattern in `index.html`
+- [ ] T057 Add case study section to Project 1 in `index.html` explaining technical decision and implementation approach
+- [ ] T058 Add case study section to Project 2 in `index.html` with performance optimization example
+- [ ] T059 Add case study section to Project 3 in `index.html` with architectural pattern rationale
+- [ ] T060 Add GitHub repository links/badges to project cards in `index.html` with specific tech stack mention
+- [ ] T061 [P] Create "Technical Leadership" section in portfolio (after About section) in `index.html`
+- [ ] T062 [P] Document code review patterns and quality standards in leadership section in `index.html` and `styles.css`
+- [ ] T063 [P] Add reference to architecture patterns (MVVM, MVP, Clean Architecture) and their benefits in project descriptions
+- [ ] T064 [P] Include performance optimization examples and metrics in case studies
+- [ ] T065 Validate all iOS technologies mentioned match constitution v1.2.1 tech stack (Swift, Firebase, Alamofire, WebRTC, etc.)
+- [ ] T066 Verify project descriptions demonstrate technical depth suitable for Tech Lead portfolio
+- [ ] T067 Perform final portfolio review: confirm iOS expertise clearly evident in project showcase, case studies, and leadership section
+
+**Checkpoint**: Constitutional alignment complete - Portfolio demonstrates iOS expertise, tech leadership, and production-ready code quality
 
 ---
 
@@ -214,6 +247,7 @@ US1 (T009-T017)  ← MVP
     ├─ US3 (T026-T034)    ← Can start after T008
     ├─ US4 (T035-T044)    ← Can run in parallel with US3
     →→ Polish (T045-T053) ← Depends on all user stories complete
+    →→ iOS Content (T054-T067) ← Depends on Polish complete (Constitutional alignment)
 ```
 
 ---
@@ -229,3 +263,5 @@ US1 (T009-T017)  ← MVP
 | T026-T034 | FR-004, FR-006, FR-009 | Interactive states provide clear feedback |
 | T042, T052 | NFR-001 | Lighthouse score maintained ≥90 |
 | T049 | NFR-002, NFR-003 | WCAG AA compliance verified |
+| T054-T060 | Principle V (iOS Showcase) | Project cards populated with iOS tech stack, case studies, GitHub links |
+| T061-T067 | Principle VI (Tech Leadership) | Leadership section added, code quality/architecture documented |
