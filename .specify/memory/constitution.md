@@ -1,15 +1,14 @@
 <!-- 
 Sync Impact Report:
-- Version: 1.2.1 → 1.3.0 (MINOR: Added Principle VII - Professional Presentation & Visual Branding)
+- Version: 1.3.0 → 1.3.1 (PATCH: Updated scope, competencies, and standards to reflect real work experience)
 - Ratified: 2026-04-11
 - Last Amended: 2026-04-11
 - Developer: Sigfrid Acabal, iOS Developer (since September 2019)
-- Current Role: Tech Lead & iOS Developer, Forty Degrees Celsius Inc.
+- Current Role: Associate Solution Architect & iOS Swift Developer, Forty Degrees Celsius Inc.
 - Scope: Professional iOS portfolio showcasing 7+ years of expertise and leadership
 - Core Competencies: Swift/SwiftUI, Flutter, Node.js, iOS architecture patterns, REST API integration, Spec-Driven Development (SDD)
 - Technical Focus: iOS development with emphasis on clean architecture, Firebase integration, WebRTC, and cloud services
 - Contact: sigfridacabal3@gmail.com | +63 963 269 7279 (Viber/WhatsApp) | https://www.linkedin.com/in/sigfrid-acabal-b19b8a1b9/
-- New Principle: Professional Presentation & Visual Branding (hero section, profile picture, modern aesthetic)
 - Files Updated: constitution.md
 -->
 
@@ -83,6 +82,15 @@ attention to design and user experience—critical skills for modern development
 Professional visual branding shows respect for recruiter time and positions the portfolio 
 as a finished product, not a work-in-progress.
 
+### VIII. Real-World Experience & Project Authenticity
+Portfolio content MUST reflect real-world experience and projects. Each project must include:
+- Company name, role, and dates of employment
+- Key responsibilities and technical contributions
+- Technologies used, including frameworks, libraries, and tools
+- Evidence of project outcomes (e.g., published apps, App Store links, or live demos)
+
+Rationale: Authenticity and transparency are essential for credibility as a Tech Lead and architect. Real-world experience demonstrates the ability to deliver impactful solutions in professional settings.
+
 ## Technology Stack
 
 **Web Portal (Portfolio Site):**
@@ -146,6 +154,37 @@ use the contact methods above. Response time commitment: business hours (Philipp
 - Clear visual hierarchy guiding user attention to key information
 - Responsive design that looks polished on all devices
 
+## Work Experience
+
+### Associate Solution Architect - iOS Swift Developer
+**Forty Degrees Celsius Inc. | 2025 January - Present**
+- Provide technical guidance and leadership to development teams
+- Identify potential risks and challenges in architecture and design
+- Research and evaluate new technologies
+- Mentor and coach junior iOS Swift developers
+- Develop and maintain NativeCamp all-language platform app
+
+### iOS Swift Developer
+**Forty Degrees Celsius Inc. | 2023 October - 2024 December**
+- Developed and maintained both NativeCamp English and Japan platform apps
+- Published NativeCamp iOS app on the App Store
+- Implemented live chat and video P2P/streaming via SkyWay WebRTC framework
+- Built AI chat and voice features
+- Implemented MVVM architecture
+
+### iOS Swift Developer + REST API
+**GoodApps Inc. | 2019 - October 2023**
+- Developed iOS Swift apps from scratch
+- Published multiple iOS apps on the App Store, including GoodKredit and PaydayToday
+- Implemented QR payment cashless transactions
+- Designed and implemented MVC architecture
+
+### iOS Swift Developer (OJT)
+**Tudlo Innovation Solutions Inc. | 2018 - 2019**
+- Worked on DIBZ Parking iOS app, an on-demand convenience app for parking reservations
+- Implemented MVC architecture
+- Developed using Swift and Xcode
+
 ## Governance
 
 This constitution defines the non-negotiable standards for portfolio development.
@@ -174,4 +213,4 @@ Amendment Procedure:
 - All updates must maintain or elevate current quality standards
 - Backward-incompatible changes require MAJOR version bump with migration plan
 
-**Version**: 1.3.0 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
+**Version**: 1.3.1 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
