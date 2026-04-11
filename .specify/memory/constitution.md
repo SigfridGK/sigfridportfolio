@@ -1,10 +1,13 @@
 <!-- 
 Sync Impact Report:
-- Version: 1.0.0 (initial constitution)
+- Version: 1.1.0 → 1.1.1 (PATCH: Technical skills clarification; expanded Technology Stack with specific tools & libraries)
 - Ratified: 2026-04-11
 - Last Amended: 2026-04-11
-- Created for: Sigfrid Acabal iOS Portfolio development
-- Scope: Personal portfolio website showcasing iOS development work
+- Developer: Sigfrid Acabal, iOS Developer (since September 2019)
+- Current Role: Tech Lead & iOS Developer, Forty Degrees Celsius Inc.
+- Scope: Professional iOS portfolio showcasing 7+ years of expertise and leadership
+- Core Competencies: Swift/SwiftUI, Flutter, Node.js, iOS architecture patterns, REST API integration, Spec-Driven Development (SDD)
+- Technical Focus: iOS development with emphasis on clean architecture, Firebase integration, WebRTC, and cloud services
 -->
 
 # Sigfrid Portfolio Constitution
@@ -16,7 +19,7 @@ Every line of code must serve a clear purpose. HTML, CSS, and JavaScript MUST be
 organized logically with meaningful naming conventions. Comments explain the "why," 
 not the "what." Code duplication is eliminated through reusable components.
 Rationale: A portfolio IS the developer's first impression—clean, maintainable code 
-demonstrates professional standards and engineering discipline.
+demonstrates professional standards and engineering discipline expected of a Tech Lead.
 
 ### II. Responsive Design (Mobile-First)
 The portfolio MUST render correctly on all device sizes (mobile, tablet, desktop).
@@ -38,29 +41,75 @@ Feature branches for substantial work. Main branch remains stable and deployable
 Regular commits: Small, logical changesets that can be reviewed independently.
 Rationale: Professional git history serves as documentation and enables team collaboration.
 
-### V. iOS Development Showcase
-Portfolio prominently features iOS projects with clear descriptions of technologies used
-(Swift, UIKit, SwiftUI, etc.). Links to App Store, GitHub repositories, or live demos.
-Case studies highlight problem-solving and technical decisions.
-Rationale: Portfolio's purpose is to demonstrate iOS expertise and attract opportunities.
+### V. iOS Development Showcase (Technical Depth Required)
+Portfolio prominently features iOS projects with clear descriptions of technologies used:
+**Primary**: Swift, SwiftUI, Combine, XCTest, MVVM, MVP architecture patterns
+**Libraries & Integrations**: Alamofire (networking), Firebase (real-time DB, Crashlytics, Auth), 
+Kingfisher (image caching), SwiftyJSON (JSON parsing), Google Maps integration
+**Advanced Features**: WebRTC/SkyWay integration, WebSocket connectivity, AWS S3 storage, 
+REST API integration, performance optimization for complex data handling
+**Cross-platform**: Flutter expertise documented where applicable
+
+Projects structured using architecture patterns (MVVM, MVP, Clean Architecture) with explicit 
+diagrams or documentation. Links to App Store, GitHub repositories with active commits, or demos.
+In-depth case studies explain technical decisions, problem-solving approach, lessons learned.
+Rationale: As an iOS developer with 7+ years of experience and Tech Lead responsibilities,
+portfolio must demonstrate command of modern iOS ecosystem and ability to architect scalable solutions.
+
+### VI. Technical Leadership & Code Quality Standards
+Portfolio exemplifies the code review and quality standards expected of a Tech Lead.
+Every featured project includes evidence of: architecture design decisions, comprehensive
+testing strategies (unit/integration tests), performance optimization, and documentation.
+Code MUST be production-ready—demonstrating ability to mentor junior developers and
+establish technical excellence across teams.
+Rationale: Leadership role requires portfolio to showcase not just individual contribution
+but ability to elevate team standards and technical culture.
 
 ## Technology Stack
 
+**Web Portal (Portfolio Site):**
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 - **Design**: Responsive, modern gradient-based aesthetic
 - **Hosting**: Static site compatible with any web server
 - **Version Control**: Git with GitHub integration
+- **Testing & QA**: Accessibility validation (axe DevTools, WAVE), Performance testing (Lighthouse, WebPageTest)
+
+**iOS Development Expertise (Featured in Portfolio):**
+- **Languages & Frameworks**: Swift, SwiftUI, UIKit, Flutter (cross-platform), Node.js (backend), AngularJS
+- **iOS Libraries**: Alamofire (HTTP networking), Firebase suite (Realtime Database, Crashlytics, Authentication), 
+  Kingfisher (image caching), SwiftyJSON (JSON parsing), Google Maps SDK, AWS S3 integration, SkyWay WebRTC
+- **Architecture Patterns**: MVC, MVVM, MVP, Clean Architecture
+- **API & Communication**: REST API integration, WebSocket connectivity, WebRTC (real-time communication)
+- **Development Tools**: Xcode, Android Studio, Git/GitHub, Jira, Firebase Crashlytics, SwiftLint (code quality)
+- **Deployment & Monitoring**: Firebase Crashlytics for real-time crash reporting, App Store deployment
 
 ## Development Workflow
 
 Before implementing any changes:
-1. Create a feature branch from main
-2. Make changes following CSS/HTML/JS conventions
-3. Test responsiveness across device sizes
-4. Commit with clear messages
-5. Create pull request for review (self-review acceptable for solo project)
-6. Verify Lighthouse scores remain ≥90
-7. Merge to main and deploy
+1. Create a feature branch from main with descriptive name
+2. Make changes following CSS/HTML/JS conventions and accessibility standards
+3. Test responsiveness across all device sizes and browsers
+4. Run Lighthouse audit; verify score ≥90
+5. Validate accessibility compliance (WCAG 2.1 AA)
+6. Commit with clear, conventional commit messages following Spec-Driven Development (SDD) principles
+7. Self-review code against code review checklist (see Governance)
+8. Verify iOS project descriptions are technically accurate, specific, and demonstrate expertise
+9. Merge to main and deploy
+
+## Professional Standards
+
+**Portfolio Accuracy**: Every featured project MUST accurately represent:
+- Technologies used (versions matter for context; e.g., "SwiftUI with iOS 15+" not just "SwiftUI")
+- Architecture decisions and rationale
+- Team size, scope, and personal contribution
+- Real performance metrics or optimization results where possible
+- Code quality practices demonstrated (testing, documentation, error handling)
+
+**Mentorship & Knowledge Sharing**: As a Tech Lead, portfolio should evidence:
+- Knowledge transfer capability through clear documentation
+- Code review patterns and quality gate implementation
+- Ability to architect solutions for junior developers to understand and extend
+- Best practices exemplified, not just listed
 
 ## Governance
 
@@ -68,12 +117,23 @@ This constitution defines the non-negotiable standards for portfolio development
 All principles are binding for merged code. Amendments follow semantic versioning 
 (MAJOR.MINOR.PATCH) and require documentation of rationale.
 
-Code review checklist:
+Code review checklist (self-review for solo project):
 - ✓ Code is clean, readable, and well-commented
-- ✓ Responsive design verified across devices
-- ✓ Accessibility standards met (WCAG 2.1 AA)
+- ✓ Responsive design verified across multiple devices and browsers
+- ✓ Accessibility standards met (WCAG 2.1 AA minimum)
 - ✓ Performance metrics maintained (Lighthouse ≥90)
-- ✓ iOS projects properly showcased
-- ✓ Git commit messages are descriptive
+- ✓ iOS projects showcase advanced architectural patterns and technical depth
+- ✓ Case studies clearly explain technical decisions, problem-solving, and specific tech stack used
+- ✓ Git commit messages follow conventional commit format and SDD principles
+- ✓ Code demonstrates production-ready quality suitable for Tech Lead portfolio
+- ✓ Testing strategies are evident (unit/integration tests referenced or visible in repos)
+- ✓ Firebase, networking, and WebRTC integrations (where used) are properly documented
+- ✓ Project descriptions include specific technologies (versions, frameworks, libraries)
+- ✓ Code reflects Spec-Driven Development methodology and TDD principles
 
-**Version**: 1.0.0 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
+Amendment Procedure:
+- Constitution changes require version bump with rationale documentation
+- All updates must maintain or elevate current quality standards
+- Backward-incompatible changes require MAJOR version bump with migration plan
+
+**Version**: 1.1.1 | **Ratified**: 2026-04-11 | **Last Amended**: 2026-04-11
