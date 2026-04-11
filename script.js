@@ -69,4 +69,29 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// T011: Contact method click logging for analytics/debugging
+const contactLinks = {
+    '.contact-email': 'email',
+    '.contact-phone': 'phone',
+    '.contact-linkedin': 'linkedin'
+};
+
+Object.entries(contactLinks).forEach(([selector, method]) => {
+    const link = document.querySelector(selector);
+    if (link) {
+        link.addEventListener('click', function() {
+            console.log(`Contact method clicked: ${method}`, {
+                timestamp: new Date().toISOString(),
+                method: method,
+                href: this.href,
+                userAgent: navigator.userAgent
+            });
+            // Optional: Send to analytics service
+            // if (window.gtag) {
+            //     gtag('event', 'contact_method_clicked', { method: method });
+            // }
+        });
+    }
+});
+
 console.log('Portfolio loaded successfully!');

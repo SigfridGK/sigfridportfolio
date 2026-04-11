@@ -368,59 +368,7 @@ body {
     outline-offset: 2px;
 }
 
-/* T014: Contact Section - Light theme header, keep dynamic footer */
-.contact {
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
-    padding: 4rem 2rem;
-    text-align: center;
-    border-top: 1px solid var(--color-border);
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--color-text-primary);
-}
-
-.contact p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: var(--color-text-secondary);
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.contact-link {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--color-accent-blue);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.contact-link:hover {
-    background-color: var(--color-accent-blue);
-    opacity: 0.9;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px var(--color-shadow-lg);
-}
-
-.contact-link:focus {
-    outline: 2px solid var(--color-accent-blue-dark);
-    outline-offset: 2px;
-}
-}
-
-/* Footer - Professional dark footer */
+/* ===== ACCESSIBILITY & FOCUS STATES ===== */
 .footer {
     background-color: var(--color-text-primary);
     color: var(--white);
@@ -539,6 +487,108 @@ a:focus {
 .leadership-item p {
     color: var(--color-text-secondary);
     line-height: 1.8;
+}
+
+/* ===== CONTACT SECTION STYLING (SIMPLIFIED) ===== */
+.contact {
+    padding: 4rem 2rem;
+    background-color: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+}
+
+.contact-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Simplified contact methods layout */
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+}
+
+/* Simplified contact links - clean and readable */
+.contact-link {
+    text-decoration: none;
+    color: var(--color-accent-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: var(--color-accent-blue-dark);
+    border-bottom-color: var(--color-accent-blue-dark);
+    text-decoration: underline;
+}
+
+.contact-link:focus {
+    outline: 2px solid var(--color-accent-blue-dark);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.contact-platforms {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-methods {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Alternative method for old .contact-links structure (for compatibility) */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 /* ===== EXPANDABLE CASE STUDIES ===== */
