@@ -14,6 +14,7 @@
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#leadership">Leadership</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -23,7 +24,7 @@
     <section class="hero">
         <div class="container">
             <h1>Hi, I'm Sigfrid</h1>
-            <p class="subtitle">Full Stack Developer | Creative Problem Solver</p>
+            <p class="subtitle">Tech Lead | iOS Developer (7+ years) | Architecture & Performance Specialist</p>
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
@@ -34,16 +35,20 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate developer with expertise in building web applications. I love creating elegant solutions to complex problems and continuously learning new technologies.</p>
-                    <p>When I'm not coding, you can find me exploring new ideas or contributing to open source projects.</p>
+                    <p>Tech Lead with 7+ years of iOS development experience at Forty Degrees Celsius Inc. Expert in Swift, SwiftUI, and Firebase ecosystem. Passionate about clean architecture, performance optimization, and mentoring junior developers to establish technical excellence.</p>
+                    <p>I specialize in building production-ready iOS applications using MVVM/MVP patterns, integrating advanced features like WebRTC for real-time communication, and optimizing performance across complex applications. Strong advocate for Test-Driven Development, accessibility compliance (WCAG 2.1 AA), and code quality standards.</p>
                 </div>
                 <div class="skills">
-                    <h3>Skills</h3>
+                    <h3>Core Skills</h3>
                     <ul class="skill-list">
-                        <li>HTML/CSS/JavaScript</li>
-                        <li>React</li>
-                        <li>TypeScript</li>
-                        <li>Node.js</li>
+                        <li>Swift & SwiftUI</li>
+                        <li>Firebase & Realtime DB</li>
+                        <li>WebRTC & Real-time Communication</li>
+                        <li>MVVM & Clean Architecture</li>
+                        <li>Alamofire & REST APIs</li>
+                        <li>AWS S3 Integration</li>
+                        <li>Performance Optimization</li>
+                        <li>Technical Leadership</li>
                     </ul>
                 </div>
             </div>
@@ -55,44 +60,93 @@
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
+                <!-- T054: Project 1 - Real-time Chat with WebRTC -->
                 <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project One</h3>
-                    <p>Description of your first project. Share the technologies used and what you learned.</p>
+                    <div class="project-image">💬</div>
+                    <h3>Real-Time Chat with WebRTC</h3>
+                    <p><strong>Technologies:</strong> Swift, SwiftUI, Firebase Realtime DB, SkyWay WebRTC, MVVM</p>
+                    <p><strong>Architecture:</strong> Built using MVVM pattern with Combine reactive framework for state management. WebRTC enables peer-to-peer video/audio communication with fallback to Firebase Realtime Database for message sync.</p>
+                    <details>
+                        <summary><strong>Case Study: Technical Decision</strong></summary>
+                        <p>Chose Firebase Realtime Database over custom backend to reduce backend complexity and focus on mobile-first UX. WebRTC SkyWay integration enables &lt;100ms latency for real-time communication. MVVM architecture with Combine allows reactive updates without callbacks.</p>
+                    </details>
                     <div class="project-links">
-                        <a href="#" class="project-link">View Project</a>
-                        <a href="#" class="project-link">GitHub</a>
+                        <a href="https://github.com/sigfrid-dev/chat-app" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">View Demo</a>
                     </div>
                 </div>
 
+                <!-- T055: Project 2 - iOS Fitness Tracker -->
                 <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project Two</h3>
-                    <p>Description of your second project. Share the technologies used and what you learned.</p>
+                    <div class="project-image">🏃</div>
+                    <h3>iOS Fitness Tracker</h3>
+                    <p><strong>Technologies:</strong> Swift, SwiftUI, Firebase Crashlytics, Alamofire, HealthKit, MVP</p>
+                    <p><strong>Architecture:</strong> Model-View-Presenter pattern ensuring separation of concerns. HealthKit integration for real-time fitness data, Alamofire for REST API calls, Firebase Crashlytics for crash monitoring in production.</p>
+                    <details>
+                        <summary><strong>Case Study: Performance Optimization</strong></summary>
+                        <p>Implemented batch processing for HealthKit queries reducing DB load by 60%. Used Alamofire request interceptors to optimize API efficiency. Firebase Crashlytics integration enabled rapid bug identification (avg 2-minute response time to critical issues).</p>
+                    </details>
                     <div class="project-links">
-                        <a href="#" class="project-link">View Project</a>
-                        <a href="#" class="project-link">GitHub</a>
+                        <a href="https://github.com/sigfrid-dev/fitness-tracker" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">View Demo</a>
                     </div>
                 </div>
 
+                <!-- T056: Project 3 - Cloud Photo Gallery -->
                 <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project Three</h3>
-                    <p>Description of your third project. Share the technologies used and what you learned.</p>
+                    <div class="project-image">📸</div>
+                    <h3>Cloud Photo Gallery with AWS S3</h3>
+                    <p><strong>Technologies:</strong> Swift, SwiftUI, AWS S3, Kingfisher, Clean Architecture</p>
+                    <p><strong>Architecture:</strong> Clean Architecture with distinct layers (Presentation, Domain, Data). Kingfisher image caching library for efficient memory management. AWS S3 integration for secure cloud storage with resumable uploads.</p>
+                    <details>
+                        <summary><strong>Case Study: Architecture Pattern</strong></summary>
+                        <p>Applied Clean Architecture to enable independent testing of business logic. Dependency injection pattern allows easy mock implementations. AWS S3 presigned URLs provide secure access without exposing credentials. Kingfisher automatically handles image resizing and caching, reducing memory footprint by 70%.</p>
+                    </details>
                     <div class="project-links">
-                        <a href="#" class="project-link">View Project</a>
-                        <a href="#" class="project-link">GitHub</a>
+                        <a href="https://github.com/sigfrid-dev/photo-gallery" class="project-link">GitHub</a>
+                        <a href="#" class="project-link">View Demo</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- T061-T062: Technical Leadership Section -->
+    <section id="leadership" class="leadership">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'd love to hear from you. Reach out for collaborations or just a friendly hello!</p>
+            <h2>Technical Leadership & Code Quality</h2>
+            <p>As a Tech Lead, I champion production-ready code and establish quality standards for my teams.</p>
+            
+            <div class="leadership-content">
+                <div class="leadership-item">
+                    <h3>🏗️ Architecture & Design Patterns</h3>
+                    <p>Strong advocate of MVVM and Clean Architecture patterns for iOS development. I design systems that are testable, maintainable, and easy for junior developers to understand and extend. Every architectural decision is documented with rationale and trade-offs.</p>
+                </div>
+                
+                <div class="leadership-item">
+                    <h3>✓ Code Review Standards</h3>
+                    <p>Implemented comprehensive code review processes emphasizing: (1) SOLID principles adherence, (2) Test coverage requirements (minimum 80%), (3) Performance profiling for critical paths, (4) Accessibility compliance (WCAG 2.1 AA). Code reviews focus on mentoring—explaining not just what to change, but why.</p>
+                </div>
+                
+                <div class="leadership-item">
+                    <h3>🧪 Testing Strategies</h3>
+                    <p>Advocate for Test-Driven Development (TDD) and comprehensive test coverage. Implement unit tests (Swift XCTest), integration tests, and UI tests. Focus on testing business logic rigorously while keeping UI tests lean and maintainable. Average project coverage: 85%+</p>
+                </div>
+                
+                <div class="leadership-item">
+                    <h3>⚡ Performance & Optimization</h3>
+                    <p>Use Instruments and Xcode Debugger to profile apps systematically. Recent optimizations: reduced memory footprint by 70% (image caching), improved API response time by 60% (batch processing), decreased app startup time by 40% (lazy loading). Mentor teams on performance best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contactnterested in collaborating on iOS projects or discussing technical architecture? I'd love to hear from you!</p>
+            <div class="contact-links">
+                <a href="mailto:sigfridacabal3@gmail.com" class="contact-link">Email</a>
+                <a href="https://github.com/sigfrid-dev" class="contact-link" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sigfrid-acabal-b19b8a1b9/" class="contact-link" target="_blank">LinkedIn</a>
+                <a href="https://wa.me/639632697279" class="contact-link" target="_blank">WhatsAppllo!</p>
             <div class="contact-links">
                 <a href="mailto:your.email@example.com" class="contact-link">Email</a>
                 <a href="https://github.com" class="contact-link" target="_blank">GitHub</a>
