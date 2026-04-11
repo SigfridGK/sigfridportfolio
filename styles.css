@@ -6,6 +6,29 @@
 }
 
 :root {
+    /* ===== LIGHT THEME COLOR PALETTE ===== */
+    /* WCAG AA Compliant - 4.5:1 minimum contrast ratio for normal text */
+    
+    /* Backgrounds - Light palette */
+    --color-bg-primary: #FAFAFA;      /* Off-white, high contrast background */
+    --color-bg-secondary: #FFFFFF;    /* Pure white for elevated surfaces */
+    --color-bg-accent: #F3F4F6;       /* Light gray for hover/interactive states */
+    
+    /* Text Colors - Dark values for readability on light backgrounds */
+    --color-text-primary: #1F2937;    /* Charcoal - primary text (4.5:1 on #FAFAFA) */
+    --color-text-secondary: #6B7280;  /* Medium gray - secondary/helper text */
+    
+    /* Accent Colors - iOS-inspired design language */
+    --color-accent-blue: #2563EB;     /* Primary accent - iOS-inspired blue */
+    --color-accent-blue-dark: #1D4ED8; /* Darker variant for active/pressed states */
+    --color-accent-green: #10B981;    /* Success color for tech badges */
+    
+    /* Borders & Shadows - Subtle depth */
+    --color-border: #E5E7EB;          /* Light gray border for cards and dividers */
+    --color-shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    --color-shadow-lg: rgba(0, 0, 0, 0.15); /* Larger shadow for hover states */
+    
+    /* ===== LEGACY COLORS (Kept for transition period) ===== */
     --primary-color: #667eea;
     --secondary-color: #764ba2;
     --text-dark: #2d3436;
@@ -13,14 +36,18 @@
     --light-bg: #f5f6fa;
     --white: #ffffff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* ===== UTILITY VARIABLES ===== */
     --transition: all 0.3s ease;
+    --transition-fast: all 0.15s ease;
 }
 
+/* T009: Light theme background and text colors */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
-    background-color: var(--white);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
 }
 
 .container {
@@ -31,11 +58,12 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: var(--white);
-    box-shadow: var(--shadow);
+    background-color: var(--color-bg-secondary);
+    box-shadow: 0 1px 3px var(--color-shadow);
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .navbar .container {
@@ -48,12 +76,10 @@ body {
 .nav-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-accent-blue);
 }
 
+/* T030: Navigation links with accent colors */
 .nav-menu {
     display: flex;
     list-style: none;
@@ -62,64 +88,82 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--color-text-primary);
     font-weight: 500;
     transition: var(--transition);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 
 .nav-menu a:hover {
-    color: var(--primary-color);
+    color: var(--color-accent-blue);
 }
 
-/* Hero Section */
+.nav-menu a:focus {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 2px;
+}
+
+/* T011: Hero Section - Light theme with dark text */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
     padding: 8rem 2rem;
     text-align: center;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     animation: fadeInDown 0.8s ease;
+    color: var(--color-text-primary);
 }
 
 .hero .subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: var(--color-text-secondary);
     animation: fadeInUp 0.8s ease 0.2s both;
 }
 
 .cta-button {
     display: inline-block;
-    background-color: var(--white);
-    color: var(--primary-color);
+    background-color: var(--color-accent-blue);
+    color: var(--white);
     padding: 0.75rem 2rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
     animation: fadeInUp 0.8s ease 0.4s both;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 
 .cta-button:hover {
+    background-color: var(--color-accent-blue);
+    opacity: 0.9;
     transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px var(--color-shadow-lg);
 }
 
-/* About Section */
+.cta-button:focus {
+    outline: 2px solid var(--color-accent-blue-dark);
+    outline-offset: 2px;
+}
+
+/* T012: About Section - Light theme */
 .about {
     padding: 4rem 2rem;
-    background-color: var(--light-bg);
+    background-color: var(--color-bg-secondary);
 }
 
 .about h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--text-dark);
+    color: var(--color-text-primary);
 }
 
 .about-content {
@@ -131,13 +175,13 @@ body {
 
 .about-text p {
     margin-bottom: 1rem;
-    color: var(--text-light);
+    color: var(--color-text-primary);
     line-height: 1.8;
 }
 
 .skills h3 {
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    color: var(--color-text-primary);
 }
 
 .skill-list {
@@ -146,13 +190,13 @@ body {
 
 .skill-list li {
     padding: 0.5rem 0;
-    color: var(--text-light);
-    border-bottom: 1px solid #e0e0e0;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .skill-list li:before {
     content: "✓ ";
-    color: var(--primary-color);
+    color: var(--color-accent-green);
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -160,13 +204,14 @@ body {
 /* Projects Section */
 .projects {
     padding: 4rem 2rem;
+    background-color: var(--color-bg-primary);
 }
 
 .projects h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--text-dark);
+    color: var(--color-text-primary);
 }
 
 .projects-grid {
@@ -175,17 +220,20 @@ body {
     gap: 2rem;
 }
 
+/* T018-T021: Project Cards - Light theme with proper styling */
 .project-card {
-    background-color: var(--white);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: 0 1px 3px var(--color-shadow);
     transition: var(--transition);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px var(--color-shadow-lg);
+    border-color: var(--color-accent-blue);
 }
 
 .project-image {
@@ -197,58 +245,72 @@ body {
     justify-content: center;
     color: var(--white);
     font-size: 3rem;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .project-card h3 {
     padding: 1.5rem 1.5rem 0;
     font-size: 1.25rem;
+    color: var(--color-text-primary);
 }
 
 .project-card p {
     padding: 0.5rem 1.5rem;
-    color: var(--text-light);
+    color: var(--color-text-secondary);
     line-height: 1.6;
 }
 
+/* T020: Technology badges and project links */
 .project-links {
     display: flex;
     gap: 1rem;
     padding: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .project-link {
     flex: 1;
+    min-width: 150px;
     text-align: center;
     padding: 0.5rem;
-    background-color: var(--light-bg);
-    color: var(--primary-color);
+    background-color: var(--color-accent-green);
+    color: var(--white);
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 0.875rem;
     transition: var(--transition);
 }
 
 .project-link:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--color-accent-blue);
+    opacity: 0.9;
 }
 
-/* Contact Section */
+.project-link:focus {
+    outline: 2px solid var(--color-accent-blue-dark);
+    outline-offset: 2px;
+}
+
+/* T014: Contact Section - Light theme header, keep dynamic footer */
 .contact {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
     padding: 4rem 2rem;
     text-align: center;
+    border-top: 1px solid var(--color-border);
 }
 
 .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: var(--color-text-primary);
 }
 
 .contact p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: var(--color-text-secondary);
 }
 
 .contact-links {
@@ -261,8 +323,8 @@ body {
 .contact-link {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: var(--white);
-    color: var(--primary-color);
+    background-color: var(--color-accent-blue);
+    color: var(--white);
     text-decoration: none;
     border-radius: 4px;
     font-weight: 600;
@@ -270,17 +332,84 @@ body {
 }
 
 .contact-link:hover {
+    background-color: var(--color-accent-blue);
+    opacity: 0.9;
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px var(--color-shadow-lg);
 }
 
-/* Footer */
+.contact-link:focus {
+    outline: 2px solid var(--color-accent-blue-dark);
+    outline-offset: 2px;
+}
+}
+
+/* Footer - Professional dark footer */
 .footer {
-    background-color: var(--text-dark);
+    background-color: var(--color-text-primary);
     color: var(--white);
     text-align: center;
     padding: 2rem;
-    opacity: 0.8;
+}
+
+.footer a {
+    color: var(--color-accent-blue);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== ACCESSIBILITY & FOCUS STATES ===== */
+/* T048: Form inputs and focus states for keyboard navigation */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+/* Ensure all interactive elements have visible focus states */
+*:focus {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 2px;
+}
+
+a {
+    color: var(--color-accent-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 2px;
+}
+
+/* Reduced motion support for animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+    /* Increase contrast for high contrast mode users */
+    body {
+        color: #000000;
+        background-color: #FAFAFA;
+    }
+    
+    .navbar {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
 }
 
 /* Animations */

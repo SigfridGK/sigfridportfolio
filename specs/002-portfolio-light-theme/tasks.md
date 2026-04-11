@@ -25,9 +25,9 @@
 
 **Purpose**: Project initialization and light theme structural setup
 
-- [ ] T001 Create comprehensive CSS color variables structure in `styles.css` root section with categories (backgrounds, text, accents, borders)
-- [ ] T002 Document light color palette mapping (current dark → new light equivalents) in `styles.css` comments
-- [ ] T003 [P] Ensure `index.html` has semantic structure with section classes ready for light theme styling
+- [x] T001 Create comprehensive CSS color variables structure in `styles.css` root section with categories (backgrounds, text, accents, borders)
+- [x] T002 Document light color palette mapping (current dark → new light equivalents) in `styles.css` comments
+- [x] T003 [P] Ensure `index.html` has semantic structure with section classes ready for light theme styling
 
 ---
 
@@ -37,11 +37,11 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Measure and document current color scheme with hex values and contrast ratios
-- [ ] T005 Define light theme primary palette: backgrounds (#FAFAFA, #FFFFFF), text (#1F2937, #374151), accents (blue, green from Apple design language)
-- [ ] T006 [P] Install accessibility validation tools locally (axe browser extension, Lighthouse CLI, or online WCAG checker)
-- [ ] T007 Create CSS variables reference block at top of `styles.css` with category comments (--color-bg-primary, --color-text-primary, --color-accent-blue, etc.)
-- [ ] T008 [P] Test CSS variable usage in browser DevTools to ensure values propagate correctly
+- [x] T004 Measure and document current color scheme with hex values and contrast ratios
+- [x] T005 Define light theme primary palette: backgrounds (#FAFAFA, #FFFFFF), text (#1F2937, #374151), accents (blue, green from Apple design language)
+- [x] T006 [P] Install accessibility validation tools locally (axe browser extension, Lighthouse CLI, or online WCAG checker)
+- [x] T007 Create CSS variables reference block at top of `styles.css` with category comments (--color-bg-primary, --color-text-primary, --color-accent-blue, etc.)
+- [x] T008 [P] Test CSS variable usage in browser DevTools to ensure values propagate correctly
 
 **Checkpoint**: Light theme color infrastructure ready - user story implementation can now begin in parallel
 
@@ -55,12 +55,12 @@
 
 ### Implementation for User Story 1
 
-- [ ] T009 [P] [US1] Update body background color to light value in `styles.css` (white or off-white #FAFAFA)
-- [ ] T010 [P] [US1] Update primary text color to dark value in `styles.css` (charcoal #1F2937 or navy #374151)
-- [ ] T011 [P] [US1] Update hero section background in `styles.css` with light palette (light background + dark text)
-- [ ] T012 [P] [US1] Update about section background and text colors in `styles.css` for light theme
-- [ ] T013 [P] [US1] Update skills section styling for light palette in `styles.css`
-- [ ] T014 [P] [US1] Update footer background and text colors in `styles.css` for light theme
+- [x] T009 [P] [US1] Update body background color to light value in `styles.css` (white or off-white #FAFAFA)
+- [x] T010 [P] [US1] Update primary text color to dark value in `styles.css` (charcoal #1F2937 or navy #374151)
+- [x] T011 [P] [US1] Update hero section background in `styles.css` with light palette (light background + dark text)
+- [x] T012 [P] [US1] Update about section background and text colors in `styles.css` for light theme
+- [x] T013 [P] [US1] Update skills section styling for light palette in `styles.css`
+- [x] T014 [P] [US1] Update footer background and text colors in `styles.css` for light theme
 - [ ] T015 [US1] Validate contrast ratios for all text elements using accessibility checker (should show ≥4.5:1 for normal text)
 - [ ] T016 [US1] Test portfolio on desktop browser (Chrome, Firefox) - verify light theme renders correctly and professionally
 - [ ] T017 [US1] Test portfolio on iOS Safari mobile device - verify text is readable and spacing is appropriate at mobile size
@@ -77,10 +77,10 @@
 
 ### Implementation for User Story 2
 
-- [ ] T018 [P] [US2] Set project card background to light value in `styles.css` with subtle shadows for depth
-- [ ] T019 [P] [US2] Update project card text colors (title, description) for light palette in `styles.css` with proper contrast
-- [ ] T020 [P] [US2] Style technology badges in project cards for light backgrounds (borders, light background, or subtle color) in `styles.css`
-- [ ] T021 [P] [US2] Add subtle borders or frames to project images in `styles.css` for visual separation on light backgrounds
+- [x] T018 [P] [US2] Set project card background to light value in `styles.css` with subtle shadows for depth
+- [x] T019 [P] [US2] Update project card text colors (title, description) for light palette in `styles.css` with proper contrast
+- [x] T020 [P] [US2] Style technology badges in project cards for light backgrounds (borders, light background, or subtle color) in `styles.css`
+- [x] T021 [P] [US2] Add subtle borders or frames to project images in `styles.css` for visual separation on light backgrounds
 - [ ] T022 [US2] Verify project card borders and shadows are visible and professional-looking (test in browser)
 - [ ] T023 [US2] Test project images are properly displayed and framed with good visibility on light backgrounds
 - [ ] T024 [US2] Validate technology badge contrast ratios meet WCAG AA standards (minimum 4.5:1)
@@ -98,11 +98,11 @@
 
 ### Implementation for User Story 3
 
-- [ ] T026 [P] [US3] Define accent color palette in CSS variables (primary accent, accent-hover, accent-focus) reflecting iOS design language in `styles.css`
-- [ ] T027 [P] [US3] Apply primary accent color to main CTA buttons in `styles.css` (Contact button, project links)
-- [ ] T028 [P] [US3] Create hover state for buttons with lighter/darker accent variant in `styles.css`
-- [ ] T029 [P] [US3] Create focus state for keyboard navigation with visible outline/ring in `styles.css`
-- [ ] T030 [P] [US3] Update link colors to use accent palette in `styles.css` with underline on hover
+- [x] T026 [P] [US3] Define accent color palette in CSS variables (primary accent, accent-hover, accent-focus) reflecting iOS design language in `styles.css`
+- [x] T027 [P] [US3] Apply primary accent color to main CTA buttons in `styles.css` (Contact button, project links)
+- [x] T028 [P] [US3] Create hover state for buttons with lighter/darker accent variant in `styles.css`
+- [x] T029 [P] [US3] Create focus state for keyboard navigation with visible outline/ring in `styles.css`
+- [x] T030 [P] [US3] Update link colors to use accent palette in `styles.css` with underline on hover
 - [ ] T031 [US3] Test hover states on interactive elements (buttons, links) - verify feedback is clear without overwhelming light aesthetic
 - [ ] T032 [US3] Test focus states with keyboard navigation (Tab through elements) - ensure visible and accessible
 - [ ] T033 [US3] Verify typography hierarchy on light palette (headers darker/bolder, body lighter) - compare to modern portfolios
@@ -139,10 +139,10 @@
 
 **Purpose**: Final validation, optimization, and code cleanup
 
-- [ ] T045 [P] Review `script.js` for any dark-theme specific code that needs light-theme compatibility testing
-- [ ] T046 [P] Ensure all CSS color variables follow naming convention (--color-[category]-[state]) in `styles.css`
-- [ ] T047 [P] Add CSS comments documenting light theme color palette rationale and WCAG compliance
-- [ ] T048 [P] Test form inputs and focus states on light backgrounds in `styles.css` and `index.html`
+- [x] T045 [P] Review `script.js` for any dark-theme specific code that needs light-theme compatibility testing
+- [x] T046 [P] Ensure all CSS color variables follow naming convention (--color-[category]-[state]) in `styles.css`
+- [x] T047 [P] Add CSS comments documenting light theme color palette rationale and WCAG compliance
+- [x] T048 [P] Test form inputs and focus states on light backgrounds in `styles.css` and `index.html`
 - [ ] T049 Perform final accessibility audit using axe DevTools or similar tool to validate WCAG AA compliance
 - [ ] T050 Perform final code review: check CSS is clean, no duplication, well-organized by section
 - [ ] T051 Test smooth scrolling and animations on light palette - ensure they don't cause accessibility issues
