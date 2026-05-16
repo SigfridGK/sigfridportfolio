@@ -28,6 +28,11 @@
     --color-shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     --color-shadow-lg: rgba(0, 0, 0, 0.15); /* Larger shadow for hover states */
     
+    /* ===== GROUPED PROJECTS (NEW) ===== */
+    --project-subproject-border: #D1D5DB; /* Slightly darker border for subproject dividers */
+    --subproject-active-bg: #F0F7FF; /* Light blue highlight for active subproject tab */
+    --subproject-active-border: #2563EB; /* Accent blue for active tab border */
+    
     /* ===== LEGACY COLORS (Kept for transition period) ===== */
     --primary-color: #667eea;
     --secondary-color: #764ba2;
@@ -366,6 +371,176 @@ body {
 .project-link:focus {
     outline: 2px solid var(--color-accent-blue-dark);
     outline-offset: 2px;
+}
+
+/* ===== GROUPED PROJECTS (NEW) ===== */
+/* T008-T009: Styles for grouped projects with subproject sections */
+
+.project-card--grouped {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Badge indicator for grouped projects (e.g., "3 Apps") */
+.project-card__badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--color-accent-blue);
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+/* Subproject navigation tabs */
+.project-subproject-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--color-border);
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    list-style: none;
+    overflow-x: auto;
+}
+
+.project-subproject-nav__tab {
+    flex: 1;
+    min-width: 120px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+}
+
+.project-subproject-nav__tab:hover {
+    background-color: var(--color-bg-accent);
+    color: var(--color-text-primary);
+}
+
+.project-subproject-nav__tab--active {
+    color: var(--color-accent-blue);
+    border-bottom-color: var(--color-accent-blue);
+    background-color: var(--subproject-active-bg);
+}
+
+/* Subproject detail section */
+.project-subproject-detail {
+    padding: 1.5rem;
+    display: none;
+}
+
+.project-subproject-detail--active {
+    display: block;
+}
+
+/* Screenshot gallery grid */
+.project-subproject-detail__gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.project-subproject-detail__gallery-image {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    background-color: var(--color-bg-accent);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.project-subproject-detail__gallery-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.project-subproject-detail__gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Feature list styling */
+.project-subproject-detail__features-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-subproject-detail__feature-item {
+    background-color: var(--color-bg-accent);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+}
+
+.project-subproject-detail__feature-item::before {
+    content: "✓ ";
+    color: var(--color-accent-green);
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+/* ===== RESPONSIVE: Project Card Adjustments ===== */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .project-subproject-nav {
+        gap: 0;
+    }
+    
+    .project-subproject-nav__tab {
+        min-width: 100px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-subproject-nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .project-subproject-nav__tab {
+        min-width: 100px;
+        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .project-subproject-detail__gallery-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card__badge {
+        top: 8px;
+        right: 8px;
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
 }
 
 /* ===== ACCESSIBILITY & FOCUS STATES ===== */

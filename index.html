@@ -10,7 +10,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">Sigfrid</div>
+            <div class="nav-brand">Sigfrid Acabal</div>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -70,56 +70,271 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- T054: Project 1 - Real-time Chat with WebRTC -->
-                <div class="project-card">
-                    <div class="project-image">💬</div>
-                    <h3>Real-Time Chat with WebRTC</h3>
-                    <p><strong>Technologies:</strong> Swift, SwiftUI, Firebase Realtime DB, SkyWay WebRTC, MVVM</p>
-                    <p><strong>Architecture:</strong> Built using MVVM pattern with Combine reactive framework for state management. WebRTC enables peer-to-peer video/audio communication with fallback to Firebase Realtime Database for message sync.</p>
-                    <details>
-                        <summary><strong>Case Study: Technical Decision</strong></summary>
-                        <p>Chose Firebase Realtime Database over custom backend to reduce backend complexity and focus on mobile-first UX. WebRTC SkyWay integration enables &lt;100ms latency for real-time communication. MVVM architecture with Combine allows reactive updates without callbacks.</p>
-                    </details>
-                    <div class="project-links">
-                        <a href="https://github.com/sigfrid-dev/chat-app" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">View Demo</a>
-                    </div>
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- T007: NativeCamp Featured Project - ESL Platform -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/nativecamp-app-icon.PNG" alt="NativeCamp - unlimited English conversation lessons platform" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
                 </div>
+                <h3>NativeCamp</h3>
+                <p>Unlimited English conversation lessons platform with mobile-first accessibility for learners worldwide.</p>
+                <p><strong>Technologies:</strong> Swift, SwiftUI, Firebase/Realtime DB, WebRTC, MVVM Architecture, Agile and Waterfall Methodology</p>
+                <p><strong>Key Features:</strong> Real-time video lessons, lesson booking, text chat, lesson history, user profiles, and instructor management system.</p>
+                <details>
+                    <summary><strong>Case Study: Real-Time Communication</strong></summary>
+                    <p>NativeCamp challenges: Managing thousands of concurrent video lesson sessions with low latency requirements. Solution: WebRTC for peer-to-peer video/audio with Firebase Realtime Database for chat and lesson state sync. MVVM architecture enables clean separation between video logic and UI state. Firebase Crashlytics monitors production stability across millions of lessons. Implemented efficient connection pooling to handle 50,000+ concurrent users.</p>
+                </details>
+            <div class="project-links" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
 
-                <!-- T055: Project 2 - iOS Fitness Tracker -->
-                <div class="project-card">
-                    <div class="project-image">🏃</div>
-                    <h3>iOS Fitness Tracker</h3>
-                    <p><strong>Technologies:</strong> Swift, SwiftUI, Firebase Crashlytics, Alamofire, HealthKit, MVP</p>
-                    <p><strong>Architecture:</strong> Model-View-Presenter pattern ensuring separation of concerns. HealthKit integration for real-time fitness data, Alamofire for REST API calls, Firebase Crashlytics for crash monitoring in production.</p>
-                    <details>
-                        <summary><strong>Case Study: Performance Optimization</strong></summary>
-                        <p>Implemented batch processing for HealthKit queries reducing DB load by 60%. Used Alamofire request interceptors to optimize API efficiency. Firebase Crashlytics integration enabled rapid bug identification (avg 2-minute response time to critical issues).</p>
-                    </details>
-                    <div class="project-links">
-                        <a href="https://github.com/sigfrid-dev/fitness-tracker" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">View Demo</a>
-                    </div>
-                </div>
+            <!-- Inline Tech Stack Tags -->
+            <span class="project-link" style="cursor: default;">Swift</span>
+            <span class="project-link" style="cursor: default;">Firebase</span>
+            <span class="project-link" style="cursor: default;">SwiftUI</span>
+            <span class="project-link" style="cursor: default;">Jira</span>
 
-                <!-- T056: Project 3 - Cloud Photo Gallery -->
-                <div class="project-card">
-                    <div class="project-image">📸</div>
-                    <h3>Cloud Photo Gallery with AWS S3</h3>
-                    <p><strong>Technologies:</strong> Swift, SwiftUI, AWS S3, Kingfisher, Clean Architecture</p>
-                    <p><strong>Architecture:</strong> Clean Architecture with distinct layers (Presentation, Domain, Data). Kingfisher image caching library for efficient memory management. AWS S3 integration for secure cloud storage with resumable uploads.</p>
-                    <details>
-                        <summary><strong>Case Study: Architecture Pattern</strong></summary>
-                        <p>Applied Clean Architecture to enable independent testing of business logic. Dependency injection pattern allows easy mock implementations. AWS S3 presigned URLs provide secure access without exposing credentials. Kingfisher automatically handles image resizing and caching, reducing memory footprint by 70%.</p>
-                    </details>
-                    <div class="project-links">
-                        <a href="https://github.com/sigfrid-dev/photo-gallery" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">View Demo</a>
-                    </div>
-                </div>
+            <!-- Full Width Bottom Button -->
+            <a href="https://nativecamp.net"
+            class="project-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="display: block; width: 100%; text-align: center; margin-top: 0.75rem;">
+            Visit NativeCamp
+            </a>
+
+        </div>
+</div>
+<!-- GoodKredit Featured Project - Finance & Utility Platform -->
+<div class="project-card">
+    <div class="project-image">
+        <img src="images/gkapp.png" alt="GoodKredit" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+    </div>
+
+    <h3>GoodKredit App PH</h3>
+
+    <p>
+        GoodKredit is a super finance and utility mobile application that provides
+        electronic Gift Certificates (eGC) and electronic Gift Vouchers (eGV)
+        integrated with multiple repayment and online payment models.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        Swift, SwiftUI, Flutter, Node.js, AngularJS, Firebase, MVC Architecture, Agile Methodology
+    </p>
+
+    <p>
+        <strong>Key Features:</strong>
+        Bills payment, buy load services, mobile cooperative organization,
+        QR payments, drop-off services, online shopping portal integration,
+        RFID modern jeep e-card payment system, Play-To-Save Lotto,
+        eGC/eGV management, and online payment processing.
+    </p>
+
+    <details>
+        <summary><strong>Case Study: Finance & Utility Ecosystem</strong></summary>
+
+        <p>
+            GoodKredit was designed as an all-in-one financial and utility ecosystem
+            focused on mobile accessibility and digital payment convenience.
+            The application was developed using Swift and SwiftUI in Xcode following
+            the MVC architecture pattern for maintainable and scalable development.
+        </p>
+
+        <p>
+            Integrated third-party payment solutions using PODS frameworks and the
+            eGHL SDK (Malaysia) to support secure online payments including
+            credit card and Visa transactions.
+        </p>
+
+        <p>
+            The platform combines multiple mini-services into a single application,
+            allowing users to perform daily financial transactions, utility payments,
+            transportation RFID payments, and online shopping within one ecosystem.
+            Agile development methodology was used to continuously improve features
+            and user experience across mobile and backend services.
+        </p>
+    </details>
+
+    <div class="project-links" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <span class="project-link" style="cursor: default;">Swift</span>
+        <span class="project-link" style="cursor: default;">SwiftUI</span>
+        <span class="project-link" style="cursor: default;">Flutter</span>
+        <span class="project-link" style="cursor: default;">Node.js</span>
+        <span class="project-link" style="cursor: default;">AngularJS</span>
+        <span class="project-link" style="cursor: default;">eGHL SDK</span>
+        <a href="https://www.goodkredit.com"
+        class="project-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="display: block; width: 100%; text-align: center; margin-top: 0.75rem;">
+        Visit GoodKredit
+        </a>
+    </div>
+</div>
+<!-- PaydayToday Featured Project -->
+<div class="project-card">
+
+    <div class="project-image">
+        <img src="images/pdyapp.jpg"
+             alt="PaydayToday App PH"
+             style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+    </div>
+
+    <h3>PaydayToday App PH</h3>
+
+    <p>
+        Payday Today is an Earned Wage Access (EWA) platform that allows employees
+        to withdraw their accrued daily salary before the end of the payroll cycle,
+        providing faster and more flexible financial access anytime.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        Swift, SwiftUI, Flutter, Node.js, AngularJS, MVC Architecture,
+        eGHL Online Payment SDK, QRPH Integration
+    </p>
+
+    <p>
+        <strong>Key Features:</strong>
+        Earned wage withdrawal, bank transfer integration,
+        GCash and Maya e-wallet support, QRPH payments,
+        24/7 partner bank processing, real-time balance access,
+        payroll integration, and secure online payment processing.
+    </p>
+
+    <details>
+        <summary><strong>Case Study: Earned Wage Access Platform</strong></summary>
+
+        <p>
+            Payday Today was originally developed as a mini-service inside the
+            GoodKredit ecosystem and later evolved into a standalone mobile
+            application for faster and more convenient user access.
+        </p>
+
+        <p>
+            The application was built using Swift and SwiftUI in Xcode following
+            the MVC architecture pattern, while Agile methodology enabled rapid
+            feature delivery and continuous platform improvements.
+        </p>
+
+        <p>
+            Integrated PODS frameworks and eGHL online payment SDK to support
+            secure banking transactions and e-wallet transfers. Employees can
+            instantly transfer their earned wages directly to supported banks,
+            GCash, and Maya accounts anytime through connected 24/7 partner
+            financial institutions.
+        </p>
+
+    </details>
+
+    <!-- Project Links -->
+    <div class="project-links"
+         style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+
+        <!-- Inline Tech Stack -->
+        <span class="project-link" style="cursor: default;">Swift</span>
+        <span class="project-link" style="cursor: default;">SwiftUI</span>
+        <span class="project-link" style="cursor: default;">Flutter</span>
+        <span class="project-link" style="cursor: default;">Node.js</span>
+        <span class="project-link" style="cursor: default;">AngularJS</span>
+        <span class="project-link" style="cursor: default;">QRPH</span>
+
+        <!-- Full Width Bottom Button -->
+        <a href="https://www.paydaytoday.io"
+           class="project-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display: block;
+                  width: 100%;
+                  text-align: center;
+                  margin-top: 0.75rem;">
+            Visit PaydayToday
+        </a>
+
+    </div>
+
+</div>
+<!-- GiftBeam Featured Project -->
+<div class="project-card">
+
+    <div class="project-image">
+        <img src="images/gbapp.png"
+             alt="GiftBeam"
+             style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+    </div>
+
+    <h3>GiftBeam</h3>
+
+    <p>
+        GiftBeam is a US-based mobile platform that provides digital vouchers,
+        gift cards, and promotional freebies to newly transferred or newly
+        purchased home residents while connecting local businesses with nearby customers.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        SwiftUI, Flutter, MVVM Architecture, QR Scanning System, Waterfall Methodology
+    </p>
+
+    <p>
+        <strong>Key Features:</strong>
+        Digital voucher and gift card management, QR code scanning,
+        local business promotions, homeowner onboarding rewards,
+        nearby store advertisements, and mobile-first customer engagement.
+    </p>
+
+    <details>
+        <summary><strong>Case Study: Digital Voucher & Local Business Ecosystem</strong></summary>
+
+        <p>
+            GiftBeam originated in 2001 under the name
+            <strong>Your Gift Certificate</strong> and later evolved into
+            a modern mobile application focused on digital gift vouchers
+            and customer engagement.
+        </p>
+
+        <p>
+            The platform was developed using SwiftUI and Flutter with MVVM
+            architecture to maintain scalable UI management and efficient
+            mobile application workflows.
+        </p>
+
+        <p>
+            GiftBeam enables local businesses to advertise directly to nearby
+            homeowners while providing customers with instant access to
+            digital freebies, vouchers, and promotional gift cards through
+            QR-based redemption systems.
+        </p>
+
+    </details>
+
+    <!-- Project Links -->
+    <div class="project-links"
+         style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+
+        <!-- Inline Tech Stack -->
+        <span class="project-link" style="cursor: default;">SwiftUI</span>
+        <span class="project-link" style="cursor: default;">Flutter</span>
+        <span class="project-link" style="cursor: default;">MVVM</span>
+        <span class="project-link" style="cursor: default;">QR Scan</span>
+
+        <!-- Full Width Bottom Button -->
+        <a href="https://giftbeam.com/"
+           class="project-link"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="display: block;
+                  width: 100%;
+                  text-align: center;
+                  margin-top: 0.75rem;">
+            Visit GiftBeam
+        </a>
+
+    </div>
+
+</div>
             </div>
         </div>
     </section>
@@ -175,7 +390,7 @@
                     <span class="contact-icon">📱</span>
                     <a href="tel:+639632697279" class="contact-link contact-phone" title="Call or message on WhatsApp">
                         +63 963 269 7279
-                    </a>
+                    </a>    
                 </div>
 
                 <!-- T010: LinkedIn link -->

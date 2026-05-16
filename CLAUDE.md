@@ -1,8 +1,10 @@
 ﻿# Sigfrid-Portfolio Development Guidelines
 
-Auto-generated from all feature plans. Last updated: 2026-04-11
+Auto-generated from all feature plans. Last updated: 2026-05-16
 
 ## Active Technologies
+- HTML5, CSS3, JavaScript (ES6+) + None (static site using CSS variables, no external frameworks) (master)
+- File-based content (JSON or markdown for project metadata) (master)
 
 - HTML5, CSS3 (with CSS Variables), ES6+ JavaScript (master)
 
@@ -23,6 +25,7 @@ npm test; npm run lint
 HTML5, CSS3 (with CSS Variables), ES6+ JavaScript: Follow standard conventions
 
 ## Recent Changes
+- master: Added HTML5, CSS3, JavaScript (ES6+) + None (static site using CSS variables, no external frameworks)
 
 - master: Added HTML5, CSS3 (with CSS Variables), ES6+ JavaScript
 
